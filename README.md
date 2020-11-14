@@ -332,10 +332,28 @@ Membuat authentifikasi pada **naik.gunung.semerut15.pw**
 
 6. Restart apache dengan perintah ```service apache2 restart```
 7. Jalankan ```naik.gunung.semerut15.pw:8888```
+
 ![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/15%20hasil.png)
 
 ## Soal 16
 Pengalihan IP **PROBOLINGGO** ke semerut15.pw secara otomatis
 
 ## Jawaban
+1. Edit konfigurasi pada file **000-default.conf** seperti dibawah dan ditambahkan perintah ``` redirect / http://semerut15.pw```
 
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/16%20konfigurasi.png)
+
+2. Aktifkan konfigurasi dengan perintah ```a2ensite 000-default.conf```
+3. Restart apache dengan perintah ```service apache2 restart```
+4. Jalankan di web browser dengan ```10.151.77.172``` 
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/16%20ip%20probo%20(1).png)
+
+5. Saat telah berjalan, akan direct menuju ```semerut15.pw```
+
+![no4](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/semerut15.pw.png)
+
+## Soal 17
+Pada **/var/www/penanjakan.semeruyyy.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring “semeru” akan diarahkan menuju **semeru.jpg**.
+
+## Jawaban
