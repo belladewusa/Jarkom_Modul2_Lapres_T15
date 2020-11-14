@@ -316,3 +316,26 @@ sedangkan web **http://naik.gunung.semerut15.pw** sudah bisa diakses hanya denga
 6. Restart **apache** dengan perintah ```service apache2 restart```
 
 ## Soal 15
+Membuat authentifikasi pada **naik.gunung.semerut15.pw**
+
+## Jawaban
+1. Pada **var/www/naik.gunung.semerut15.pw** lakukan ```apt-get update```
+2. Lakukan ```apt-get insta;; apache2-utils```. Ini untuk mendapatkan htpassword
+3. Jalankan ```htpasswd -c /etc/apache2/.htpasswd (username) (password)```. Sesuai soal diminta username: **semeru** dan password **kuynaikgunung**
+4. Selanjutnya tambahkan pada konfigurasi seperti digambar
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/15.png)
+
+5. Edit **ports.conf** seperti gambar
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/15%20ports.png)
+
+6. Restart apache dengan perintah ```service apache2 restart```
+7. Jalankan ```naik.gunung.semerut15.pw:8888```
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/15%20hasil.png)
+
+## Soal 16
+Pengalihan IP **PROBOLINGGO** ke semerut15.pw secara otomatis
+
+## Jawaban
+
