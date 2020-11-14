@@ -190,4 +190,4 @@ Membuat subdomain ```naik.gunung.semerut15.pw```
 ![no7](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%207%20hasil.jpg)
 
 ## Soal 8
-
+1. cd menuju ```etc/apache2/site
