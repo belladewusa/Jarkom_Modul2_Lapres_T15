@@ -256,3 +256,21 @@ Dibuat web dengan domain **http://penanjakan.semerut15.pw** untuk menyimpan file
 Pada folder /public diperbolehkan directory listing tetapi folder didalamnya tidak diperbolehkan
 
 ## Jawaban
+1. cd ke **/var/www/penanjakan.semerut15.pw** lalu **ls**
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/11%20ls.png)
+
+2. Untuk setiap sub-folder didalam **folder public** dibuat **file .htaccess** dengan isi:
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/11%20.htaccess.png)
+
+3. Restart apache dengan perintah ```service apache2 restart```
+4. Jalankan dengan perintah ```penanjakan.semerut15.pw/public/css/```
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/11%20jalan.png)
+
+## Soal 12
+Disediakan file 404.html untuk mengganti error default 404 dari apache
+
+## Dijawab
+
