@@ -49,4 +49,24 @@ Gunakan perintah ```sysctl -p``` untuk mengaktifkan perubahan.
 9. Install bind9 dengan perintah ```apt-get install bind9 -y```
 
 ## Soal 1
+Membuat domain ```semerut15.pw```
 
+## Jawaban
+1. Konfigurasikan zone pada UML Malang dengan membuka perintah ```nano /etc/bind/named.conf.local```
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201%20zone.png)
+
+2. Buat folder dengan perintah ```mkdir /etc/bind/jarkom```
+3. Meng-copy file db.local dengan perintah ```cp /etc/bind/db.local /etc/bind/jarkom/semerut15.pw```
+4. Buka ```nano /etc/bind/jarkom/semerut15.pw``` kemudian edit seperti ini. 
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201.png)
+
+5. Restart bind9 dengan perintah ```service bind9 restart```
+6. Lalu atur pada Nameserver pada Client GRESIK 
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/setting%20nameserver%20client.png)
+
+7. Tes ```ping semerut15.pw```
+
+![no4](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201%20hasil.png)
