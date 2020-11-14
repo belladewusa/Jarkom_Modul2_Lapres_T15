@@ -40,7 +40,7 @@ Gunakan perintah ```sysctl -p``` untuk mengaktifkan perubahan.
 
 4. Restart network dengan perintah ```service networking restart``` disetiap UML. 
 5. Cek dengan perintang ```ipconfig```
-6. Lalu jalankan perintah ```iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16``` pada router SURABAYA agar internet terhubung kejaringan luar. 
+6. Lalu jalankan perintah ```iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16``` pada router **SURABAYA** agar internet terhubung kejaringan luar. 
 7. Export ```proxy.sh``` untuk setiap UML.
 
 ![no8](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/proxy.png)
@@ -52,7 +52,7 @@ Gunakan perintah ```sysctl -p``` untuk mengaktifkan perubahan.
 Membuat domain ```semerut15.pw```
 
 ## Jawaban
-1. Konfigurasikan zone pada UML Malang dengan membuka perintah ```nano /etc/bind/named.conf.local```
+1. Konfigurasikan zone pada UML **MALANG** dengan membuka perintah ```nano /etc/bind/named.conf.local```
 
 ![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201%20zone.png)
 
@@ -63,7 +63,7 @@ Membuat domain ```semerut15.pw```
 ![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201.png)
 
 5. Restart bind9 dengan perintah ```service bind9 restart```
-6. Lalu atur pada Nameserver pada Client GRESIK 
+6. Lalu atur pada Nameserver pada client **GRESIK** 
 
 ![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/setting%20nameserver%20client.png)
 
