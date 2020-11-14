@@ -357,3 +357,13 @@ Pengalihan IP **PROBOLINGGO** ke semerut15.pw secara otomatis
 Pada **/var/www/penanjakan.semeruyyy.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring “semeru” akan diarahkan menuju **semeru.jpg**.
 
 ## Jawaban
+1. cd ke **/var/www/penanjakan.semerut15.pw**
+2. Membuat file **.htaccess** dan diisi seperti gambar:
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/17.png)
+
+```(*.)semeru(.*)``` memiliki arti bahwa akan mengakses semua perintah asalkan bentuk keduanya mengandung kata **semeru**
+
+3. Jalankan ```penanjakan.semerut15.pw/hvsemerulk```
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%2017%20(2).png)
