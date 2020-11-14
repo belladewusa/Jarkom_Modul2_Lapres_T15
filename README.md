@@ -136,4 +136,42 @@ Pembuatan dns slave ke **MOJOKERTO**
 
 ![no4](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%205%20hasil.jpg)
 
+## Soal 6
+Pembuatan subdomain ```gunung.semeruyyy.pw``` yang didelegasikan pada **MOJOKERTO** dan mengarahkan ke IP **PROBOLINGGO**
 
+## Jawaban
+1. Edit file ```/etc/bind/jarkom/kanto.a1.com``` di **MALANG**
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20malang.png)
+
+2. Edit file ```/etc/bind/named.conf.options``` di **MALANG**. Kemudian tambahkan **allow-query{any;};**
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20malang%20dns%20forwader.png)
+
+3. Edit file ```/etc/bind/named.conf.local``` di **MALANG*
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201%20zone.png)
+
+4. Restart bind9 dengan perintah ```service bind9 restart```
+5. Edit file ```/etc/bind/named.conf.options``` di **MOJOKERTO**
+
+![no4](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20mojo%20dns%20forwader.png)
+
+6. Edit file ```/etc/bind/named.conf.local``` di **MOJOKERTO**
+
+![no5](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20zone%20mojo.png)
+
+7. Buat direktori delegasi dan copy file **db.local** di **MOJOKERTO**
+```
+mkdir /etc/bind/delegasi
+cp /etc/bind/db.local /etc/bind/delegasi/naik.gunung.semerut15.pw.
+```
+
+8. Edit file ```naik.gunung.semerut15.pw.```
+
+![no6](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20mojokerto.JPG)
+
+9. Restart bind9 dengan perintah ```service bind9 restart```
+10. Tes ```ping naik.gunung.semerut15.pw```
+
+![no7](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%207%20hasil.jpg)
