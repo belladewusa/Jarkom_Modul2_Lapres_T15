@@ -164,14 +164,30 @@ Pembuatan subdomain ```gunung.semeruyyy.pw``` yang didelegasikan pada **MOJOKERT
 7. Buat direktori delegasi dan copy file **db.local** di **MOJOKERTO**
 ```
 mkdir /etc/bind/delegasi
-cp /etc/bind/db.local /etc/bind/delegasi/naik.gunung.semerut15.pw.
+cp /etc/bind/db.local /etc/bind/delegasi/gunung.semerut15.pw.
 ```
 
-8. Edit file ```naik.gunung.semerut15.pw.```
+8. Edit file ```gunung.semerut15.pw.```
 
 ![no6](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20mojokerto.JPG)
 
 9. Restart bind9 dengan perintah ```service bind9 restart```
-10. Tes ```ping naik.gunung.semerut15.pw```
+10. Tes ```ping gunung.semerut15.pw```
 
 ![no7](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%207%20hasil.jpg)
+
+## Soal 7
+Membuat subdomain ```naik.gunung.semerut15.pw```
+
+## Jawaban
+1. Edit file ```gunung.semerut15.pw.```
+
+![no6](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%20mojokerto.JPG)
+
+2. Restart bind9 dengan perintah ```service bind9 restart```
+3. Tes ```ping naik.gunung.semerut15.pw```
+
+![no7](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%207%20hasil.jpg)
+
+## Soal 8
+
