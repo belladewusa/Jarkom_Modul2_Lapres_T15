@@ -189,5 +189,48 @@ Membuat subdomain ```naik.gunung.semerut15.pw```
 
 ![no7](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/6%207%20hasil.jpg)
 
+## Membuat Topologi Jaringan
+1. Membuat seperti dibawah: 
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/topologi%20webserver.png)
+
+2. Install **apache2** di **PROBOLINGGO** dengan perintah ```apt-get install apache2```
+3. Install **php** di **PROBOLINGGO** dengan perintah ```apt-get install php7.0```
+
 ## Soal 8
-1. cd menuju ```etc/apache2/site
+1. cd menuju ```etc/apache2/sites-available``` dan edit file **000-default.conf**
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/000-default.png)
+
+2. Buat directory website (mkdir /var/www/semerut15.pw)
+3. Pindah ke direktori ```/etc/apache2/sites-available``` dan copy file default ke file **semerut15.pw**
+4. Edit file **semerut15.pw**
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/8%20default%20semerut15.pw.png)
+
+5. Restart **apache** dengan perintah ```service apache2 restart```
+6. Aktifkan konfigurasi dengan perintah ```a2ensite semerut15.pw```
+7. Download file pendukung dengan **wget 10.151.36.202/semeru.pw.zip** di directory ```/var/www/semerut15.pw```
+8. Extract file (.zip)
+9. Jalankan di web browser ```semerut15.pw```
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/semerut15.pw.png)
+
+## Soal 9
+Mod rewrite agar **semerut15.p/index.php/home** menjadi **semerut15.pw/home**
+
+## Jawaban
+1. Pindah ke directory ```/var/www/semerut15.pw``` dan buat file ```.htaccess``` dengan isi:
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/9%20.htaccess.png)
+
+2. Buka /etc/apache2/sites-available/semerut15.pw lalu tambahkan:
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/9.png)
+
+3. Aktifkan module rewrite (a2enmod rewrite)
+4. Restart **apache2** dengan perintah ```service apache restart```
+5. Jalankan di web browser ```semerut15.pw/home```
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/9%20semerut15.pw.png)
+
