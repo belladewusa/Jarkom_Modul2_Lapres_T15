@@ -270,7 +270,19 @@ Pada folder /public diperbolehkan directory listing tetapi folder didalamnya tid
 ![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/11%20jalan.png)
 
 ## Soal 12
-Disediakan file 404.html untuk mengganti error default 404 dari apache
+Disediakan file **404.html** untuk mengganti error default 404 dari apache
 
 ## Dijawab
+1. Edit file **/etc/apache2/sites-available/penanjakan.semerut15.pw**
 
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/12%20eror.png)
+
+2. Restart apache dengan perintah ```service apache2 restart```
+3. Jalankan dengan ```penanjakan.semerut15.pw/haha```
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/12%20hasil.png)
+
+## Soal 13
+Untuk mengakses file assets javascript awalnya harus menggunakan url http://penanjakan.semerut15.pw/public/javascripts. Karena terlalu panjang maka dibuatkan konfigurasi virtual host agar ketika mengakses file assets menjadi http://penanjakan.semerut15.pw/js
+
+## Jawaban
