@@ -234,3 +234,25 @@ Mod rewrite agar **semerut15.p/index.php/home** menjadi **semerut15.pw/home**
 
 ![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/9%20semerut15.pw.png)
 
+## Soal 10
+Dibuat web dengan domain **http://penanjakan.semerut15.pw** untuk menyimpan file dengan DocumentRoot **/var/www/penanjakan.semerut15.pw**
+
+## Jawaban
+1. Buat directory website (mkdir **/var/www/penanjakan.semerut15.pw**)
+2. Pindah ke direktori /etc/apache2/sites-available dan copy file default ke file **penanjakan.semerut15.pw**
+3. Edit file **penanjakan.semerut15.pw**
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/10.png)
+
+4. Aktifkan konfigurasi dengan ```a2ensite penanjakan.semerut15.pw```
+5. Download file pendukung dengan wget 10.151.36.202/penanjakan.semeru.pw.zip di directory /var/www/penanjakan.semerut15.pw
+6. Extract file (**.zip**)
+7. Restart **apache** dengan perintah ```service apache2 restart```
+8. Jalankan ```penanjakan.semerut15.pw```
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/10%20penanjakan.semerut15.pw.png)
+
+## Soal 11
+Pada folder /public diperbolehkan directory listing tetapi folder didalamnya tidak diperbolehkan
+
+## Jawaban
