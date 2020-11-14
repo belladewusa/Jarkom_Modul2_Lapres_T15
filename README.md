@@ -113,3 +113,27 @@ Pembuatan reverse domain
 4. Tes pada **GRESIK** dengan perintah ```host -t PTR 10.151.70.172```
 
 ![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%204%20hasil.png)
+
+## Soal 5
+Pembuatan dns slave ke **MOJOKERTO**
+
+## Jawaban
+1. Konfigurasikan zone pada UML **MALANG** dengan membuka perintah ```nano /etc/bind/named.conf.local```
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201%20zone.png)
+
+2. Restart bind9 dengan perintah ```service bind9 restart```
+3. Konfigurasikan zone pada UML **MOJOKERTO** dengan membuka perintah ```nano /etc/bind/named.conf.local```
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%205%20mojo.png)
+
+4. Restart bind9 dengan perintah ```service bind9 restart```
+5. Lalu atur pada Nameserver pada client **GRESIK**. Tambahkan **(#)** pada Nameserver **MALANG**
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/setting%20nameserver%20client.png)
+
+6. Tes ```ping semerut15.pw```
+
+![no4](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%205%20hasil.jpg)
+
+
