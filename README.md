@@ -79,8 +79,9 @@ Membuat domain alias ```www.semerut15.pw```
 
 ![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%202.png)
 
-2. Tes ```ping www.semerut15.pw``` pada **GRESIK**
+2. Restart bind9 dengan perintah ```service bind9 restart```
+3. Tes ```ping www.semerut15.pw``` pada **GRESIK**
 
 ![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%202%20hasil.png)
 
-
+`
