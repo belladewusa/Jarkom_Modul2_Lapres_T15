@@ -302,3 +302,17 @@ Untuk mengakses file assets javascript awalnya harus menggunakan url **http://pe
 sedangkan web **http://naik.gunung.semerut15.pw** sudah bisa diakses hanya dengan menggunakan port 8888. DocumentRoot web berada pada **/var/www/naik.gunung.semerut15.pw.**
 
 ## Jawaban
+1. Buat directory dengan mkdir **/var/www/naik.gunung.semerut15.pw**
+2. Edit konfirgurasi menjadi pada gambar
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/14.png)
+
+3. Edit **ports.conf** seperti gambar
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/15%20ports.png)
+
+4. Download file pendukung dengan wget 10.151.36.202/naik.gunung.semeru.pw.zip di directory /var/www/naik.gunung.semerut15.pw
+5. Extract file (**.zip**)
+6. Restart **apache** dengan perintah ```service apache2 restart```
+
+## Soal 15
