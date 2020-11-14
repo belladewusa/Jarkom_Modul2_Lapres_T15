@@ -70,3 +70,17 @@ Membuat domain ```semerut15.pw```
 7. Tes ```ping semerut15.pw```
 
 ![no4](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%201%20hasil.png)
+
+## Soal 2
+Membuat domain alias ```www.semerut15.pw```
+
+## Jawaban
+1. Tambahkan **CNAME** pada file ```/etc/bind/jarkom/semerut15.pw``` 
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%202.png)
+
+2. Tes ```ping www.semerut15.pw``` pada **GRESIK**
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%202%20hasil.png)
+
+
