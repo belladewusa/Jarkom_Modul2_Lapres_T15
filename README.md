@@ -283,6 +283,22 @@ Disediakan file **404.html** untuk mengganti error default 404 dari apache
 ![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/12%20hasil.png)
 
 ## Soal 13
-Untuk mengakses file assets javascript awalnya harus menggunakan url http://penanjakan.semerut15.pw/public/javascripts. Karena terlalu panjang maka dibuatkan konfigurasi virtual host agar ketika mengakses file assets menjadi http://penanjakan.semerut15.pw/js
+Untuk mengakses file assets javascript awalnya harus menggunakan url **http://penanjakan.semerut15.pw/public/javascripts**. Karena terlalu panjang maka dibuatkan konfigurasi virtual host agar ketika mengakses file assets menjadi **http://penanjakan.semerut15.pw/js**
+
+## Jawaban
+1. Edit file konfigurasi yang berada di folder **/etc/apache2/sites-available**
+2. Buka file **penanjakan.semerut15.pw**
+3. Tambahkan konfirgurasi seperti pada gambar:
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/13.png)
+
+4. Menjalankan perintah a2enmod rewrite untuk mengaktifkan module rewrite.
+5. Restart apache dengan perintah ```service apache2 restart```
+6. Jalankan dengan ```penanjakan.semerut15.pw/js``` atau ```penanjakan.semerut15.pw/js/index.js```
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/13%20hasil.png)
+
+## Soal 14
+sedangkan web **http://naik.gunung.semerut15.pw** sudah bisa diakses hanya dengan menggunakan port 8888. DocumentRoot web berada pada **/var/www/naik.gunung.semerut15.pw.**
 
 ## Jawaban
