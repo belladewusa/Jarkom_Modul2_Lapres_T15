@@ -96,3 +96,20 @@ Pembuatan subdomain ```http://penanjakan.semerut15.pw```yang diatur pada **MALAN
 3. Tes ```ping penanjakan.semerut15.pw``` pada **GRESIK**
 
 ![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%203%20hasil.jpg)
+
+## Soal 4
+Pembuatan reverse domain
+
+## Jawaban
+1. Konfigurasikan zone pada UML **MALANG** dengan membuka perintah ```nano /etc/bind/named.conf.local```
+
+![no1](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%204.png)
+
+2. Meng-copy **db.local** ke file **77.151.10.in-addr.arpa** dengan perintah ```cp /etc/bind/db.local /etc/bind/jarkom/77.151.10.in-addr.arpa```
+3. Edit file **77.151.10.in-addr.arpa**
+
+![no2](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%204_.png)
+
+4. Tes pada **GRESIK** dengan perintah ```host -t PTR 10.151.70.172```
+
+![no3](https://github.com/belladewusa/Jarkom_Modul2_Lapres_T15/blob/main/gambar/no%204%20hasil.png)
